@@ -1,24 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PomodoroTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="95T-XF-7Be">
+                                <rect key="frame" x="0.0" y="47" width="428" height="864"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKb-G0-PnU" userLabel="1View">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="281.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decide on the task to be completed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uMz-be-SbV">
+                                                <rect key="frame" x="25" y="111.66666666666664" width="378" height="58.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                                <color key="textColor" red="0.2117646933" green="0.2941176593" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="uMz-be-SbV" secondAttribute="trailing" constant="25" id="Ofq-it-Tb5"/>
+                                            <constraint firstItem="uMz-be-SbV" firstAttribute="leading" secondItem="KKb-G0-PnU" secondAttribute="leading" constant="25" id="Wwq-aV-zbK"/>
+                                            <constraint firstItem="uMz-be-SbV" firstAttribute="centerY" secondItem="KKb-G0-PnU" secondAttribute="centerY" id="ZQT-Bk-Qyc"/>
+                                            <constraint firstItem="uMz-be-SbV" firstAttribute="centerX" secondItem="KKb-G0-PnU" secondAttribute="centerX" id="oUO-Ux-Brc"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Yw-PN-ydY" userLabel="2View">
+                                        <rect key="frame" x="0.0" y="291.33333333333337" width="428" height="281.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-ub-HfU">
+                                                <rect key="frame" x="146.66666666666666" y="55" width="134.99999999999997" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="135" id="RRs-Ph-TcF"/>
+                                                    <constraint firstAttribute="height" constant="55" id="bey-OZ-jYL"/>
+                                                </constraints>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                                    <backgroundConfiguration key="background" cornerRadius="18" strokeWidth="4">
+                                                        <color key="strokeColor" red="0.2117646933" green="0.2941176593" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="31"/>
+                                                    <color key="baseForegroundColor" red="0.2117646933" green="0.2941176593" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sdy-PL-O0c"/>
+                                                </connections>
+                                            </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5jr-KA-AHF">
+                                                <rect key="frame" x="35" y="140" width="358" height="2.3333333333333428"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1.5" id="0bF-s0-xdR"/>
+                                                </constraints>
+                                                <color key="progressTintColor" red="0.21568629149999999" green="0.34509804840000002" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="trackTintColor" systemColor="systemGrayColor"/>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="CUF-ub-HfU" firstAttribute="centerX" secondItem="1Yw-PN-ydY" secondAttribute="centerX" id="ER4-2f-v8T"/>
+                                            <constraint firstAttribute="trailing" secondItem="5jr-KA-AHF" secondAttribute="trailing" constant="35" id="I5b-UR-lBI"/>
+                                            <constraint firstItem="5jr-KA-AHF" firstAttribute="top" secondItem="CUF-ub-HfU" secondAttribute="bottom" constant="30" id="QQ3-il-Jdq"/>
+                                            <constraint firstItem="5jr-KA-AHF" firstAttribute="leading" secondItem="1Yw-PN-ydY" secondAttribute="leading" constant="35" id="UVa-xR-KTd"/>
+                                            <constraint firstItem="5jr-KA-AHF" firstAttribute="centerX" secondItem="1Yw-PN-ydY" secondAttribute="centerX" id="jkO-Lf-CYL"/>
+                                            <constraint firstItem="5jr-KA-AHF" firstAttribute="centerY" secondItem="1Yw-PN-ydY" secondAttribute="centerY" id="mUM-cZ-vpb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQb-Ri-t3i" userLabel="3View">
+                                        <rect key="frame" x="0.0" y="582.66666666666663" width="428" height="281.33333333333337"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pomodoro" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-cJ-IcW">
+                                                <rect key="frame" x="93.666666666666671" y="0.0" width="240.66666666666663" height="253.33333333333334"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Rka-cJ-IcW" secondAttribute="height" multiplier="0.95" id="EoU-cD-kKt"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Rka-cJ-IcW" firstAttribute="height" secondItem="hQb-Ri-t3i" secondAttribute="height" multiplier="0.9" id="K1Q-33-P9M"/>
+                                            <constraint firstItem="Rka-cJ-IcW" firstAttribute="centerX" secondItem="hQb-Ri-t3i" secondAttribute="centerX" id="QZK-nW-fsQ"/>
+                                            <constraint firstItem="Rka-cJ-IcW" firstAttribute="centerY" secondItem="hQb-Ri-t3i" secondAttribute="centerY" id="S4J-Ov-JCt"/>
+                                            <constraint firstItem="Rka-cJ-IcW" firstAttribute="centerX" secondItem="hQb-Ri-t3i" secondAttribute="centerX" id="YSj-Ju-Pjt"/>
+                                            <constraint firstItem="Rka-cJ-IcW" firstAttribute="top" secondItem="hQb-Ri-t3i" secondAttribute="top" id="vVy-jF-Ocq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hQb-Ri-t3i" firstAttribute="leading" secondItem="95T-XF-7Be" secondAttribute="leading" id="1aQ-I0-u9V"/>
+                                    <constraint firstAttribute="trailing" secondItem="hQb-Ri-t3i" secondAttribute="trailing" id="1jb-4w-KtZ"/>
+                                    <constraint firstItem="KKb-G0-PnU" firstAttribute="leading" secondItem="95T-XF-7Be" secondAttribute="leading" id="1uK-94-Nch"/>
+                                    <constraint firstItem="1Yw-PN-ydY" firstAttribute="leading" secondItem="95T-XF-7Be" secondAttribute="leading" id="2ah-H2-9hh"/>
+                                    <constraint firstItem="KKb-G0-PnU" firstAttribute="top" secondItem="95T-XF-7Be" secondAttribute="top" id="5nV-Hi-Kjc"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Yw-PN-ydY" secondAttribute="trailing" id="9eq-me-UOl"/>
+                                    <constraint firstAttribute="bottom" secondItem="hQb-Ri-t3i" secondAttribute="bottom" id="PeE-aQ-t1V"/>
+                                    <constraint firstAttribute="trailing" secondItem="KKb-G0-PnU" secondAttribute="trailing" id="ReS-IZ-Khb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="95T-XF-7Be" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0cq-KI-w2d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="95T-XF-7Be" secondAttribute="trailing" id="Jmy-tF-sEl"/>
+                            <constraint firstItem="95T-XF-7Be" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XkC-Rr-sV7"/>
+                            <constraint firstAttribute="bottom" secondItem="95T-XF-7Be" secondAttribute="bottom" constant="15" id="bbh-fi-ysu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelText" destination="uMz-be-SbV" id="1XS-Cq-lhh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pomodoro" width="341.33334350585938" height="341.33334350585938"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
