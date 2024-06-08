@@ -7,7 +7,7 @@
 <div align="center">
     <img src="https://github.com/nasoviva/PomodoroTimer/blob/main/LaunchScreen.png" alt="Описание изображения" width="300"/>
   <br>
-    <img src="https://github.com/nasoviva/PomodoroTimer/blob/main/Main_1.png" alt="Описание изображения" width="300"/>
-    <img src="https://github.com/nasoviva/PomodoroTimer/blob/main/Main_2.png" alt="Описание изображения" width="300"/
-    <img src="https://github.com/nasoviva/PomodoroTimer/blob/main/Main_3.png" alt="Описание изображения" width="300"/>
+    <img src="https://github.com/nasoviva/PomodoroTimer/blob/main/Main_1.png" alt="Описание изображения" width="200"/>
+    <img src="https://github.com/nasoviva/PomodoroTimer/blob/main/Main_2.png" alt="Описание изображения" width="200"/>
+    <img src="https://github.com/nasoviva/PomodoroTimer/blob/main/Main_3.png" alt="Описание изображения" width="200"/>
 </div>
